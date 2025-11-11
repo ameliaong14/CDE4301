@@ -16,3 +16,18 @@ p {
   text-align: justify;
   font-size: 1.1rem;
 }
+
+team-member[avatar="assets/Portrait.jpg"] img {
+  transform: scale(15.1);   /* zoom in face */
+  object-position: 99% 45%; /* adjust framing */
+}
+
+.team-member-wrapper {
+  display: flex;
+  justify-content: center;     /* center all members horizontally */
+  align-items: flex-start;      /* align tops consistently */
+  gap: 60px;                    /* spacing between cards */
+  text-align: center;
+}
+
+
