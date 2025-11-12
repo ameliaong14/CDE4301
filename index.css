@@ -30,4 +30,10 @@ team-member[avatar="assets/Portrait.jpg"] img {
   text-align: center;
 }
 
+/* Ensure figure captions in the Current Standard of Care section are black and italic */
+#current-standard-of-care figure figcaption {
+  color: #000 !important;
+  font-style: italic; /* in case <em> isn't used or to reinforce italics */
+}
+
 
