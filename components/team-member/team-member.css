@@ -1,6 +1,6 @@
 .team-member-wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-wrap: wrap;
   margin: 48px 0;
   gap: 24px;
