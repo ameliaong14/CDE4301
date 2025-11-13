@@ -1,9 +1,10 @@
 .team-member-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 48px 0;
-  gap: 16px;
+  gap: 24px;
+  align-items: flex-start;
 }
 
 @media (max-width: 599px) {}

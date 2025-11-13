@@ -15,6 +15,54 @@ body {
 p {
   text-align: justify;
   font-size: 1.1rem;
+  font-family: var(--sl-font-sans);
+  line-height: 1.6;
+}
+
+/* Ensure all body text uses consistent font */
+body, .content {
+  font-family: var(--sl-font-sans);
+}
+
+/* Consistent figure caption styling */
+figcaption {
+  font-size: 0.95rem !important;
+  color: #333 !important;
+  margin-top: 0.5em;
+  font-family: var(--sl-font-sans) !important;
+  font-style: italic;
+}
+
+/* Ensure all headings use the same font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sl-font-sans);
+}
+
+/* Consistent table text */
+table {
+  font-family: var(--sl-font-sans);
+  font-size: 1rem;
+}
+
+table td, table th {
+  font-family: var(--sl-font-sans);
+  font-size: 1rem;
+}
+
+/* Consistent list item styling */
+li {
+  font-family: var(--sl-font-sans);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Consistent table caption styling (for paragraph-based captions) - match figure labels */
+.content p[style*="text-align:center"][style*="font-style:italic"] {
+  font-size: 0.95rem !important;
+  font-family: var(--sl-font-sans) !important;
+  color: #333 !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0 !important;
 }
 
 team-member[avatar="assets/Portrait.jpg"] img {
