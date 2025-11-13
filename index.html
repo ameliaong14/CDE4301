@@ -31,6 +31,21 @@
   <script src="./components/table-component/table-component.js"></script>
 
   <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+  <style>
+    #references ol {
+      list-style: none;
+      counter-reset: ref-counter;
+      padding-left: 2em;
+    }
+    #references ol li {
+      counter-increment: ref-counter;
+      margin-bottom: 1em;
+    }
+    #references ol li::before {
+      content: "[" counter(ref-counter) "] ";
+      margin-right: 0.5em;
+    }
+  </style>
 </head>
 
 <body>
@@ -1033,21 +1048,113 @@
     <div id="references" class="references">
       <sl-divider></sl-divider>
       <h2>References</h2>
-      <ul>
-        <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
+      <ol>
+        <li style="margin-bottom: 1em;">
+          National Kidney Foundation, "Hemodialysis," <em>National Kidney Foundation</em>, Apr. 26, 2024. 
+          https://www.kidney.org/kidney-topics/hemodialysis 
+          (accessed Nov. 01, 2025).
         </li>
-        <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
+        <li style="margin-bottom: 1em;">
+          P. Rout and A. Aslam, "End-Stage Renal Disease," <em>National Library of Medicine</em>, Jun. 22, 2025. 
+          https://www.ncbi.nlm.nih.gov/books/NBK499861/ 
+          (accessed Nov. 01, 2025).
         </li>
-        <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
+        <li style="margin-bottom: 1em;">
+          C. E. Lok et al., "KDOQI Clinical Practice Guideline for Vascular Access: 2019 Update," <em>American Journal of Kidney Diseases</em>, vol. 75, no. 4, pp. S1–S164, Apr. 2020, 
+          doi: https://doi.org/10.1053/j.ajkd.2019.12.001.
         </li>
-      </ul>
+        <li style="margin-bottom: 1em;">
+          National Institute of Diabetes and Digestive and Kidney Diseases, "Hemodialysis," <em>National Institute of Diabetes and Digestive and Kidney Diseases</em>, Jan. 2018. 
+          https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis 
+          (accessed Nov. 01, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          S. C. Pang et al., "Current state of vascular access in Singapore," <em>The Journal of Vascular Access</em>, vol. 21, no. 5, pp. 582–588, Sep. 2019, 
+          doi: https://doi.org/10.1177/1129729819878595.
+        </li>
+        <li style="margin-bottom: 1em;">
+          "Arteriovenous fistula formation &amp; dialysis - Dr Jill O'Donnell," <em>Dr Jill O'Donnell</em>, Feb. 13, 2023. 
+          https://drjillodonnell.com.au/patient-resources/arteriovenous-fistula-formation-dialysis/ 
+          (accessed Nov. 01, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          National Kidney Foundation, "NKF KDOQI clinical practice guidelines," <em>National Kidney Foundation</em>, Aug. 12, 2024. 
+          https://www.kidney.org/professionals/kdoqi
+        </li>
+        <li style="margin-bottom: 1em;">
+          "Key Statistics – The National Kidney Foundation (NKF) Singapore," <em>nkfs.org</em>. 
+          https://nkfs.org/about-us/key-statistics/ 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          R. Y. Tan et al., "Outcomes of endovascular salvage of clotted arteriovenous access and predictors of patency after thrombectomy," <em>Journal of Vascular Surgery</em>, vol. 71, no. 4, pp. 1333–1339, Sep. 2019, 
+          doi: https://doi.org/10.1016/j.jvs.2019.07.056.
+        </li>
+        <li style="margin-bottom: 1em;">
+          "Annual Reports – The National Kidney Foundation (NKF) Singapore," <em>nkfs.org</em>. 
+          https://nkfs.org/about-us/annual-reports/ 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          M. M. Engelen, P. Verhamme, and T. Vanassche, "Clotting of the Extracorporeal Circuit in Hemodialysis: Beyond Contact-Activated Coagulation," <em>Seminars in Nephrology</em>, vol. 43, no. 6, pp. 151473–151473, Nov. 2023, 
+          doi: https://doi.org/10.1016/j.semnephrol.2023.151473.
+        </li>
+        <li style="margin-bottom: 1em;">
+          M. A. Zain, R. T. Jamil, and W. J. Siddiqui, "Neointimal Hyperplasia," <em>PubMed</em>, 2021. 
+          https://www.ncbi.nlm.nih.gov/books/NBK499893/
+        </li>
+        <li style="margin-bottom: 1em;">
+          S. Srakocic, "Understanding Chronic Thrombosis," <em>Healthline</em>, Sep. 08, 2023. 
+          https://www.healthline.com/health/chronic-thrombosis
+        </li>
+        <li style="margin-bottom: 1em;">
+          N. Wilson John, C. Dang, N. Reddy, C. Chao, K. J. Ho, and B. Jiang, "Bioengineering Strategies for Treating Neointimal Hyperplasia in Peripheral Vasculature: Innovations and Challenges," <em>Advanced Healthcare Materials</em>, vol. 14, no. 7, Jan. 2025, 
+          doi: https://doi.org/10.1002/adhm.202401056.
+        </li>
+        <li style="margin-bottom: 1em;">
+          "Mustang Balloon Dilatation Catheter," <em>www.bostonscientific.com</em>, 2025. 
+          https://www.bostonscientific.com/en-US/products/catheters--balloon/Mustang_Balloon_Dilatation_Catheter.html 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          "Peripheral Cutting BalloonTM Microsurgical Dilatation Device for Hemodialysis Access Management," <em>www.bostonscientific.com</em>, 2025. 
+          https://www.bostonscientific.com/en-US/products/catheters--balloon/peripheral-cutting-balloon.html 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          "AGENTTM Drug-Coated Balloon (DCB) - Boston Scientific," <em>Boston Scientific</em>, 2024. 
+          https://www.bostonscientific.com/us/en/healthcare-professionals/products/balloons-catheters-and-guidewires/drug-coated-balloons/agent-drug-coated-balloon/fp00000400.html 
+          (accessed Nov. 13, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          "CLEANERTM Rotational Thrombectomy System | Argon Medical Devices," <em>Argon Medical Devices</em>, Jul. 08, 2024. 
+          https://www.argonmedical.com/product/cleaner-rotational-thrombectomy-system-cleaner-rotational-thrombectomy-system/ 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          "AngioJetTM Peripheral Thrombectomy System," <em>Boston Scientific</em>, 2015. 
+          https://www.bostonscientific.com/us/en/healthcare-professionals/products/thrombectomy-systems/angiojet-peripheral-thrombectomy-system/fp90000109.html 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          "Penumbra System | Penumbra Inc," <em>Penumbra, Inc</em>, May 30, 2023. 
+          https://www.penumbrainc.com/products/penumbra-system/ 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          "BD CoveraTM Vascular Covered Stent – Precision for AV Access Management | BD," <em>Bd.com</em>, 2023. 
+          https://www.bd.com/en-sea/products-and-solutions/products/product-families/covera-vascular-covered-stent 
+          (accessed Nov. 02, 2025).
+        </li>
+        <li style="margin-bottom: 1em;">
+          X. Li, C. Liu, and H. Hu, "Prevailing insights into anastomotic angles of surgically created arteriovenous fistulas: a literature review," <em>BMC Nephrology</em>, vol. 26, no. 1, pp. 252–252, May 2025, 
+          doi: https://doi.org/10.1186/s12882-025-04182-4.
+        </li>
+        <li style="margin-bottom: 1em;">
+          D. Mazzaccaro, M. Giannetta, Paolo Righini, A. Modafferi, G. Malacrida, and G. Nano, "Endovascular Materials and Their Behavior in Peripheral Vascular Surgery," <em>Frontiers in Surgery</em>, vol. 9, May 2022, 
+          doi: https://doi.org/10.3389/fsurg.2022.900364.
+        </li>
+      </ol>
     </div>
   </div>
 
