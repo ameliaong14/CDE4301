@@ -36,4 +36,33 @@ team-member[avatar="assets/Portrait.jpg"] img {
   font-style: italic; /* in case <em> isn't used or to reinforce italics */
 }
 
+.concept-card {
+  margin: 2.5rem 0;
+  padding: 1.75rem;
+  border: 1px solid #e1e4e8;
+  border-radius: 14px;
+  background: #fafafa;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.concept-card h4 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.concept-card image-component {
+  display: block;
+  max-width: 92%;
+  margin: 0 auto 1.5rem;
+}
+
+.concept-card .concept-description {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  text-align: justify;
+}
+
 
