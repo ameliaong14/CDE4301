@@ -49,28 +49,10 @@
 </head>
 
 <body>
-  <div class="content">
-    <!-- University Logos -->
-    <div style="display: flex; justify-content: center; align-items: center; gap: 4em; margin: -1em 0 2.5em 0; padding: 1.5em 0; border-bottom: 2px solid #e5e7eb;">
-      <img src="assets/NUS logo.png" alt="NUS Logo" style="max-height: 100px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); margin-left: 3cm;">
-      <img src="assets/duke nus logo.jpg" alt="Duke-NUS Logo" style="max-height: 120px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); margin-right: 2cm;">
-    </div>
-    
-    <h1>VasCura</h1>
-    <p style="text-align: center; font-size: 1.05rem; font-style: italic; color: #555; margin-top: -10px;">Novel approach to maintain post-intervention AVF patency</p>
-
-    <!-- This is the team member component use to display details about your team members -->
-    <div class="team-member-wrapper">
-
-      <team-member avatar="assets/Potrait_ver2.jpg" name="Amelia Ong" department="NUS Biomedical Engineering"
-        year="2025"></team-member>
-    </div>
-
-    <!-- This is a divide from the shoelace library for aesthetic purpose -->
-    <sl-divider></sl-divider>
-
-    <!-- This is the table-of-content component used to define links directly to each section -->
-    <div class="table-of-content">
+  <div class="layout-wrapper">
+    <!-- Fixed Left Sidebar for Table of Contents -->
+    <aside class="sidebar">
+      <div class="table-of-content">
       <h2>Table of Contents</h2>
       <sl-tree>
         <sl-tree-item>
@@ -183,10 +165,32 @@
           <a href="#future-work">9. Future work</a>
         </sl-tree-item>
       </sl-tree>
-    </div>
-    <sl-divider></sl-divider>
+      </div>
+    </aside>
 
-    <div>
+    <!-- Main Content Area (scrolls independently) -->
+    <main class="main-content">
+      <div class="content">
+        <!-- University Logos -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 4em; margin: -1em 0 2.5em 0; padding: 1.5em 0; border-bottom: 2px solid #e5e7eb;">
+          <img src="assets/NUS logo.png" alt="NUS Logo" style="max-height: 100px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); margin-left: 8cm;">
+          <img src="assets/duke nus logo.jpg" alt="Duke-NUS Logo" style="max-height: 100px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); margin-right: 6cm;">
+        </div>
+        
+        <h1>VasCura</h1>
+        <p style="text-align: center; font-size: 1.05rem; font-style: italic; color: #555; margin-top: -10px;">Novel approach to maintain post-intervention AVF patency</p>
+
+        <!-- This is the team member component use to display details about your team members -->
+        <div class="team-member-wrapper">
+
+          <team-member avatar="assets/Potrait_ver2.jpg" name="Amelia Ong" department="NUS Biomedical Engineering"
+            year="2025"></team-member>
+        </div>
+
+        <!-- This is a divide from the shoelace library for aesthetic purpose -->
+        <sl-divider></sl-divider>
+
+        <div>
 
       <!-- Acknowledgement Section -->
       <div id="acknowledgement">
@@ -1158,6 +1162,8 @@
         </li>
       </ol>
     </div>
+      </div>
+    </main>
   </div>
 
   <!-- This is the code to display the scroll to top button for ergonomic -->

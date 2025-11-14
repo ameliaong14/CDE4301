@@ -36,6 +36,88 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Layout Wrapper for Sidebar and Main Content */
+.layout-wrapper {
+  display: flex;
+  position: relative;
+}
+
+/* Fixed Left Sidebar - stays in place while page scrolls */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  background: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2rem 1.5rem;
+  z-index: 1000;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
+}
+
+.sidebar .table-of-content {
+  width: 100%;
+}
+
+.sidebar .table-of-content h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.sidebar .table-of-content sl-tree {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.sidebar .table-of-content a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+}
+
+.sidebar .table-of-content a:hover {
+  color: var(--primary-color);
+}
+
+.sidebar .table-of-content sl-tree-item {
+  margin: 0.25rem 0;
+}
+
+/* Main Content Area - scrolls independently */
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  min-height: 100vh;
+}
+
 .content {
   max-width: 900px;
   margin: 0 auto;
@@ -352,7 +434,33 @@ html {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 240px;
+  }
+
+  .main-content {
+    margin-left: 240px;
+  }
+}
+
 @media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -280px;
+    transition: left 0.3s ease;
+    z-index: 2000;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
   .content {
     padding: 2rem 4%;
     margin: 1rem;
