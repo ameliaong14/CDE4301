@@ -410,8 +410,12 @@
           <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 5. Root-cause analysis</em></figcaption>
         </figure>
         <p>
-          After AVF creation, turbulent flow and repeated needle punctures promote the formation of clots and neointimal hyperplasia (NIH) [11]. While current procedures aim to remove these blockages, residual material that cannot be fully cleared often leads to recurrent stenosis. These resistant lesions consist mainly of chronic clots (CC) and NIH.
+          Following AVF creation, turbulent haemodynamics and repeated cannulation contribute to the formation of acute clots, chronic clots, and neointimal hyperplasia (NIH) [11]. While acute thrombus can usually be removed with standard techniques, chronic clot and NIH are dense, fibrotic, and firmly adherent to the vessel wall. 
         </p>
+        <figure style="margin-top: 1em; text-align: center;">
+          <img src="assets/diff clots.jpg" alt="Different clots" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 6. Different clots and NIH</em></figcaption>
+        </figure>
         <p>
           A CC becomes firmly attached to the vessel wall over time, composed of cross-linked fibrin, trapped red blood cells, and collagen. This dense, inelastic structure makes it difficult for current devices to remove effectively [12].
         </p>
@@ -420,7 +424,7 @@
         </p>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/outflow vein.jpg" alt="Outflow vein - schematic" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 6. Deposition of NIH and CC</em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 7. Deposition of NIH and CC</em></figcaption>
         </figure>
         <p>
           Together, CC and NIH form tough, wall-adherent lesions that current tools struggle to detach and fully clear, especially in thin, fragile veins. The consequence is residual obstruction, incomplete flow restoration, and a cycle of repeat interventions that ultimately shortens AVF lifespan.
@@ -505,7 +509,7 @@
         </p>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/product positioning.jpg" alt="Product positioning map comparing VasCura with existing treatment modalities" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 7. Product positioning map</em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 8. Product positioning map</em></figcaption>
         </figure>
       </div>
 
@@ -551,7 +555,7 @@
         </p>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/Jobs to be done.jpg" alt="Jobs-to-be-Done schematic summarising gains, pains, and customer jobs" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 8. Jobs-to-be-Done, Pains and Gains schematic</em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 9. Jobs-to-be-Done, Pains and Gains schematic</em></figcaption>
         </figure>
         <p>
           Mapping the Pains, Gains, and Customer Jobs clarified the key performance gaps, allowing us to define both the must-have design requirements essential for clinical success and the nice-to-have features that enhance usability and workflow. These were then translated into quantifiable engineering metrics targeting the core drivers of recurrent stenosis.
@@ -574,7 +578,7 @@
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/black box.jpg" alt="Black box functional model of VasCura system"
             style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 9. Black
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 10. Black
               analysis of VasCura system</em></figcaption>
         </figure>
         <p>
@@ -584,7 +588,7 @@
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/fucntional decomposition.jpg" alt="Functional decomposition of VasCura system"
             style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 10. Functional decomposition
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 11. Functional decomposition
               of VasCura sub-systems</em></figcaption>
         </figure>
       </div>
@@ -597,8 +601,7 @@
       <div id="design-specifications">
         <h3>6.1. Design specifications</h3>
         <p>
-          Table 5 summarises the priority performance requirements for VasCura, mapping each engineering metric to its
-          quantitative target range.
+          Table 5 summarises the priority performance requirements for VasCura, mapping each engineering metric to its quantitative target range. These targets are aligned with current clinical standards, the anatomical and biomechanical constraints of AVF segments, and the specifications of complementary devices to ensure seamless integration into existing workflows.
         </p>
         <table style="width:100%; border-collapse: collapse; margin: 1.5em 0;">
           <thead style="background-color:#f2f2f2; text-align:left;">
@@ -663,12 +666,11 @@
       <div id="concept-generation">
         <h3>6.2. Concept Generation</h3>
         <p>
-          Based on the functional analysis above, key solution principles were generated for the integral functions,
-          which were then further validated through extensive secondary research and interviews.
+          Key solution principles derived from the functional analysis were validated through research and clinician interviews, leading to the development of four concepts. Further details are provided in Appendix D.
         </p>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/morphological chart.jpg" alt="Morphological Chart" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 11. Morphological Chart </em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 12. Morphological Chart </em></figcaption>
         </figure>
       </div>
 
@@ -676,7 +678,7 @@
         <h4>6.2.1 Concept 1</h4>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/concept 1.jpg" alt="Concept 1 rendering" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 12. Concept 1 - Dual-Balloon Stabiliser with Rotablade </em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 13. Concept 1 - Dual-Balloon Stabiliser with Rotablade </em></figcaption>
         </figure>
         <p style="margin-top: 1em; text-align: justify;">
           Description: Dual-balloon system enabling stable, torque-assisted rotation for clearing wall-adherent NIH and CC, with depth-stop rails to prevent vessel injury.
@@ -687,10 +689,10 @@
         <h4>6.2.2 Concept 2</h4>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/concept 2.jpg" alt="Concept 2 rendering" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 13. Concept 2 - Guarded Helical Micro-Shaver </em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 14. Concept 2 - Guarded Helical Micro-Shaver </em></figcaption>
         </figure>
         <p style="margin-top: 1em; text-align: justify;">
-          Description: Description: Collapsible helical cutter within a wire-guarded casing that safely shears and removes NIH and CC while preventing vessel trauma and downstream debris migration.
+          Description: Collapsible helical cutter within a wire-guarded casing that safely shears and removes NIH and CC while preventing vessel trauma and downstream debris migration.
         </p>
       </div>
 
@@ -698,7 +700,7 @@
         <h4>6.2.3 Concept 3</h4>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/concept 3.jpg" alt="Concept 3 rendering" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 14. Concept 3 - Tri-Rail Depth-Stop Scoring System </em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 15. Concept 3 - Tri-Rail Depth-Stop Scoring System </em></figcaption>
         </figure>
         <p style="margin-top: 1em; text-align: justify;">
           Description: Collapsible three-point scoring device that limits vessel penetration, moderately debulks NIH with fewer passes, and captures debris using a distal umbrella net.
@@ -709,7 +711,7 @@
         <h4>6.2.4 Concept 4</h4>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/concept 4.jpg" alt="Concept 4 rendering" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 15. Concept 4 - Balloon Guarded Conical Shaver </em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 16. Concept 4 - Balloon Guarded Conical Shaver </em></figcaption>
         </figure>
         <p style="margin-top: 1em; text-align: justify;">
           Description: Balloon-assisted conical shaver that expands to engage and shear wall-adherent NIH and CC using micro-cutting perforations, while maintaining central guidewire alignment for safe clearance.
@@ -850,7 +852,7 @@
             </tr>
           </tbody>
         </table>
-        <p style="text-align:center; font-style:italic; color:#333; margin-top:0.5em; font-size:0.95rem;"><em>Table 8. Concept ranking using Pugh Matrix (Appendix D)</em></p>
+        <p style="text-align:center; font-style:italic; color:#333; margin-top:0.5em; font-size:0.95rem;"><em>Table 8. Concept ranking using Pugh Matrix (Appendix E)</em></p>
         <p>
           Using this selection method, <strong>Concept 4</strong> was chosen for its balance of feasibility, safety, and innovation.
         </p>
@@ -866,7 +868,7 @@
           Building on the identified limitations of existing devices, VasCura introduces a novel guarded micro-shearing and capture mechanism that allows complete and safe clearance of adherent NIH and chronic clots, something current devices cannot achieve.
         </p>
         <image-component tag="finalised-concept" source="assets/pink concept 4.jpg"
-          subtitle="Figure 18. Finalised Concept Design"></image-component>
+          subtitle="Figure 19. Finalised Concept Design"></image-component>
         <table style="width:100%; border-collapse: collapse; margin: 1.5em 0;">
           <thead style="background-color:#f2f2f2; text-align:left;">
             <tr>
@@ -885,7 +887,7 @@
             </tr>
             <tr>
               <td style="border:1px solid #000; padding:10px; vertical-align:top;">3. Cheese-grater blades</td>
-              <td style="border:1px solid #000; padding:10px; vertical-align:top;">Designed to shear neointimal hyperplasia and chronic clots without direct contact with the vessel wall, enhancing safety. This mechanism is simpler and safer than high-speed rotating blades and captures debris neatly, minimizing embolic risk.</td>
+              <td style="border:1px solid #000; padding:10px; vertical-align:top;">Designed to shear neointimal hyperplasia and chronic clots without direct contact with the vessel wall, enhancing safety. This mechanism is simpler and safer than high-speed rotating blades and captures debris neatly, minimising embolic risk.</td>
             </tr>
             <tr>
               <td style="border:1px solid #000; padding:10px; vertical-align:top;">4. Cone-shaped debris capture</td>
@@ -894,6 +896,17 @@
           </tbody>
         </table>
         <p style="text-align:center; font-style:italic; color:#333; margin-top:0.5em; font-size:0.95rem;"><em>Table 9. Detailed Functional Analysis of VasCura</em></p>
+        <figure style="margin-top: 1em; text-align: center;">
+          <video controls style="max-width:100%; height:auto; background-color:#fff;">
+            <source src="assets/final concept 7 demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Video 1. VasCura Demo</em></figcaption>
+        </figure>
+        <figure style="margin-top: 1em; text-align: center;">
+          <img src="assets/diff clots with our device.jpg" alt="Different clots with device" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 20. VasCura in vessel</em></figcaption>
+        </figure>
         <table style="width:100%; border-collapse: collapse; margin: 1.5em 0;">
           <thead style="background-color:#f2f2f2; text-align:left;">
             <tr>
@@ -921,13 +934,6 @@
           </tbody>
         </table>
         <p style="text-align:center; font-style:italic; color:#333; margin-top:0.5em; font-size:0.95rem;"><em>Table 10. Design Considerations of cheese-grater like shaver</em></p>
-        <figure style="margin-top: 1em; text-align: center;">
-          <video controls style="max-width:100%; height:auto; background-color:#fff;">
-            <source src="assets/final concept 7 demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Video 1. Concept 7 Demo</em></figcaption>
-        </figure>
       </div>
 
       <div id="prototyping">
@@ -943,13 +949,13 @@
             <div style="width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; padding: 4px; background: #fff; box-sizing: border-box;">
               <img src="assets/entire circuit clear.jpg" alt="Patent AVF circuit" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
             </div>
-            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 19. Patent AVF circuit</em></figcaption>
+            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 21. Patent AVF circuit</em></figcaption>
           </figure>
           <figure style="flex: 1; min-width: 300px; max-width: 48%; text-align: center; margin: 0; display: flex; flex-direction: column;">
             <div style="width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; padding: 4px; background: #fff; box-sizing: border-box;">
               <img src="assets/entire circuit not clear.jpg" alt="Blocked AVF circuit" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
             </div>
-            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 20. Blocked AVF circuit</em></figcaption>
+            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 22. Blocked AVF circuit</em></figcaption>
           </figure>
         </div>
       </div>
@@ -962,13 +968,13 @@
             <div style="width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; padding: 4px; background: #fff; box-sizing: border-box;">
               <img src="assets/6mm patent.jpg" alt="6mm patent AVF" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
             </div>
-            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 21. 6mm patent silicone tubing</em></figcaption>
+            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 23. 6mm patent silicone tubing</em></figcaption>
           </figure>
           <figure style="flex: 1; min-width: 300px; max-width: 48%; text-align: center; margin: 0; display: flex; flex-direction: column;">
             <div style="width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; padding: 4px; background: #fff; box-sizing: border-box;">
               <img src="assets/6mm not patent.jpg" alt="6mm not patent AVF" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
             </div>
-            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 22. 6mm not patent silicone tubing</em></figcaption>
+            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 24. 6mm not patent silicone tubing</em></figcaption>
           </figure>
         </div>
       </div>
@@ -981,29 +987,29 @@
             <div style="width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; padding: 4px; background: #fff; box-sizing: border-box;">
               <img src="assets/cheese grater long.jpg" alt="Testing of blades" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
             </div>
-            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 23. Testing of blades</em></figcaption>
+            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 25. Testing of blades</em></figcaption>
           </figure>
           <figure style="flex: 1; min-width: 300px; max-width: 48%; text-align: center; margin: 0; display: flex; flex-direction: column;">
             <div style="width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; padding: 4px; background: #fff; box-sizing: border-box;">
               <img src="assets/Final look like prorotype.jpg" alt="Final look-like prototype" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" />
             </div>
-            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 24. Final look-like prototype</em></figcaption>
+            <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 26. Final look-like prototype</em></figcaption>
           </figure>
         </div>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/Image J analysis.png" alt="Image J analysis" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 25. Image J analysis</em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 27. Image J analysis</em></figcaption>
         </figure>
       </div>
 
       <div id="future-work">
         <h2>9. Future work</h2>
         <p>
-          Future prototyping has been structured into four development phases, with key challenges and additional design considerations detailed in the Appendix E. Phase 0 focuses on finalising the bench-top vessel model for testing. Phase 1 involves the fabrication of the functional cutting element, followed by Phase 2, which covers the design of the deployment mechanism. Phase 3 integrates the balloon and cutting components into a unified system, while the final phase will include comprehensive validation of the complete prototype, targeted for completion by Dazzle Day.
+          Future prototyping has been structured into four development phases, with key challenges and additional design considerations detailed in the Appendix F. Phase 0 focuses on finalising the bench-top vessel model for testing. Phase 1 involves the fabrication of the functional cutting element, followed by Phase 2, which covers the design of the deployment mechanism. Phase 3 integrates the balloon and cutting components into a unified system, while the final phase will include comprehensive validation of the complete prototype, targeted for completion by Dazzle Day.
         </p>
         <figure style="margin-top: 1em; text-align: center;">
           <img src="assets/prototype plan.jpg" alt="Prototype plan showing development phases" style="max-width:100%; height:auto; border: 1px solid #ddd; padding:4px; background:#fff;" />
-          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 26. Prototype development plan</em></figcaption>
+          <figcaption style="font-size:0.95rem; color:#333; margin-top:0.5em;"><em>Figure 28. Prototype development plan</em></figcaption>
         </figure>
         <p>
           Each prototyping phase will include a specific testing plan, with consistent overall metrics used to evaluate performance across iterations.
