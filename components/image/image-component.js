@@ -34,6 +34,7 @@ class ImageComponent extends HTMLElement {
       sub {
         font-size: 1rem;
         font-style: italic;
+        color: #333;
       }
     </style>
   `;
