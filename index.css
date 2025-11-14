@@ -315,7 +315,7 @@ team-member[avatar="assets/Portrait.jpg"] img {
 /* Make primary author (Amelia Ong) profile larger */
 .team-member-wrapper team-member.primary-author {
   max-width: 380px !important;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transform-origin: center top;
   z-index: 1;
 }
