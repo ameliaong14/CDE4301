@@ -17,10 +17,9 @@ class TeamMember extends HTMLElement {
   }
 
   render() {
-    const isPrimary = this.classList.contains('primary-author');
-    const imgSize = isPrimary ? '180px' : '140px';
-    const maxWidth = isPrimary ? '280px' : '240px';
-    const fontSize = isPrimary ? '1.2em' : '1.1em';
+    const imgSize = '160px';
+    const maxWidth = '260px';
+    const fontSize = '1.1em';
     
     const div = document.createElement("div");
     div.innerHTML = `
