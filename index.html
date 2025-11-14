@@ -182,23 +182,28 @@
     <main class="main-content">
       <div class="content">
         <!-- University Logos -->
-        <div style="display: flex; justify-content: center; align-items: center; gap: 4em; margin: -1em 0 2.5em 0; padding: 1.5em 0; border-bottom: 2px solid #e5e7eb;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 4em; margin: 0 0 1.5em 0; padding: 1em 0; border-bottom: 2px solid #e5e7eb;">
           <img src="assets/NUS logo.png" alt="NUS Logo" style="max-height: 100px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); margin-left: 8cm;">
           <img src="assets/duke nus logo.jpg" alt="Duke-NUS Logo" style="max-height: 100px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); margin-right: 6cm;">
         </div>
         
-        <h1>VasCura</h1>
-        <p style="text-align: center; font-size: 1.05rem; font-style: italic; color: #555; margin-top: -10px;">Novel approach to maintain post-intervention AVF patency</p>
+        <h1 style="margin-top: 1rem;">VasCura</h1>
+        <p style="text-align: left; font-size: 1.05rem; font-style: italic; color: #555; margin-top: -10px; margin-bottom: 1rem;">Novel approach to maintain post-intervention AVF patency</p>
+        
+        <h3 style="text-align: left; margin: 2rem 0 1.5rem 0; font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">Meet the Team</h3>
 
         <!-- This is the team member component use to display details about your team members -->
-        <div class="team-member-wrapper">
-
-          <team-member avatar="assets/Potrait_ver2.jpg" name="Amelia Ong" department="NUS Biomedical Engineering"
+        <div class="team-member-wrapper" style="margin: 1rem 0; justify-content: space-around; width: 100%;">
+          <team-member class="primary-author" avatar="assets/Potrait_ver2.jpg" name="Amelia Ong" department="NUS Biomedical Engineering"
             year="2025"></team-member>
+          <team-member avatar="assets/Potrait_ver2.jpg" name="Lin Ming" department="Duke-NUS Medical School"
+            year="Medical Student"></team-member>
+          <team-member avatar="assets/Potrait_ver2.jpg" name="Dr. Eliot" department="NUS MBA"
+            year="Business Advisor"></team-member>
         </div>
 
         <!-- This is a divide from the shoelace library for aesthetic purpose -->
-        <sl-divider></sl-divider>
+        <sl-divider style="margin: 1.5rem 0;"></sl-divider>
 
         <div>
 
@@ -1031,7 +1036,7 @@
         <h2>9. Limitations and Future work</h2>
         <h3>9.1. Limitations of project</h3>
         <p>
-          Progress is presently limited by two key constraints that affect the reliability and safety validation of the current design. First, the vein and NIH analogues do not yet fully replicate the mechanical behaviour of fibrotic lesions, which limits the accuracy of bench-top performance testing. Second, the conical shaver's interaction with tortuous AVF anatomy remains insufficiently characterised, introducing uncertainty regarding potential wall contact or injury at vessel bends. Recognising these limitations, the next phase will prioritise improving lesion models and systematically evaluating device–vessel interaction through controlled prototyping and testing. Additional considerations are outlined in Appendix F.
+          Progress is presently limited by two key constraints that affect the reliability and safety validation of the current design. First, the vein and NIH analogues do not yet fully replicate the mechanical behaviour of fibrotic lesions, which limits the accuracy of bench-top performance testing. Second, the conical shaver's interaction with tortuous AVF anatomy remains insufficiently characterised, introducing uncertainty regarding potential wall contact or injury at vessel bends. Recognising these limitations, the next phase will prioritise improving lesion models and systematically evaluating device–vessel interaction through controlled prototyping and testing. Additional considerations are outlined in Appendix E.
         </p>
       </div>
 

@@ -17,6 +17,11 @@ class TeamMember extends HTMLElement {
   }
 
   render() {
+    const isPrimary = this.classList.contains('primary-author');
+    const imgSize = isPrimary ? '130px' : '100px';
+    const maxWidth = isPrimary ? '180px' : '120px';
+    const fontSize = isPrimary ? '1.15em' : '1em';
+    
     const div = document.createElement("div");
     div.innerHTML = `
     <img src="${this.avatar}" alt="${this.name}">
@@ -26,13 +31,14 @@ class TeamMember extends HTMLElement {
     <style>
       :host {
         display: block;
-        max-width: 120px;
+        max-width: ${maxWidth};
         text-align: center;
+        font-size: ${fontSize};
       }
 
       img {
-        width: 100px;
-        height: 100px;
+        width: ${imgSize};
+        height: ${imgSize};
         border-radius: 50%;
         display: block;
         margin: auto;
