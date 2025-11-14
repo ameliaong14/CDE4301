@@ -314,16 +314,12 @@ team-member[avatar="assets/Portrait.jpg"] img {
 
 /* Make primary author (Amelia Ong) profile larger */
 .team-member-wrapper team-member.primary-author {
-  max-width: 180px !important;
-  transform: scale(1.4);
+  max-width: 380px !important;
+  transform: scale(1.2);
   transform-origin: center top;
   z-index: 1;
 }
 
-/* Increase font sizes for primary author */
-.team-member-wrapper team-member.primary-author {
-  font-size: 0.9em;
-}
 
 /* Ensure figure captions in the Current Standard of Care section are black and italic */
 #current-standard-of-care figure figcaption {
